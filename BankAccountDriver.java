@@ -97,9 +97,15 @@ public class BankAccountDriver{
 
 
         if(a instanceof Savings){
+        // print the current balance of the savings account before applyig the interest
             s.ApplyInterest();
+            
             System.out.println("New Balance " + s.getBalance()); 
+            
+             // this is to add some identifying info for testing right?
             System.out.println(s.toString()); 
+            
+            // what's going on here? where does s1 come from?
             System.out.println(s1.getBalance()); 
         }// end is savings
 
